@@ -21,7 +21,7 @@
 - [英会話](/tech/entalk/)
 - [プログラミング](/tech/programming/)
 - [動画編集](/tech/movie_edit/)
-- [塾講師])(/tech/teach/)
+- [塾講師](/tech/teach/)
 - [飲食店スタッフ](/tech/restaurant/)
 
 [タイトル](URL)
