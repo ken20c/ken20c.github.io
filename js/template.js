@@ -1,7 +1,7 @@
 const a = 0
 
 function header(){
-    if(a++ === 0)
+    if(a++ < 1)
         {
         var html = "";
         html += '<header style="background-color: syan;">';
