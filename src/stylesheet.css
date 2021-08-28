@@ -1,4 +1,5 @@
     body {
+      font-size: 1.6rem;
     }  
     h1 {      
       padding: 0.25em 0.5em;/*上下 左右の余白*/
@@ -92,9 +93,9 @@ p{
 }
 @media screen and (max-width: 640px) {/* 640px以下でスマホ画面時*/
   h3 {
-    font-size:1.6rem;/*16px*/
+    font-size:2.4rem;/*24px*/
   }
   p{
-    font-size:1.2rem;/*12px*/
+    font-size:2.0rem;/*20px*/
   }
 }
