@@ -1,5 +1,5 @@
     body {
-      font-size: 1.6rem;
+      font-size: (1.6*2)rem;
     }  
     h1 {      
       padding: 0.25em 0.5em;/*上下 左右の余白*/
