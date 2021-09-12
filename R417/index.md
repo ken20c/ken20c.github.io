@@ -23,12 +23,12 @@
     (8m)  
 15:30 終点(重複区間を除いて)  
     (17m)  
-15:50 [越前岬 展望台](https://www.town-echizen.jp/spot/spot01Detail.php?id=276)  
+15:50 [越前岬 展望台](https://www.town-echizen.jp/spot/spot01Detail.php?id=276) [画像](ken20c.github.io/img/echizen-misaki.jpg)  
+
 【空き1〜2時間】  
 18:00 or 19:00　ディナー  
 候補1: [王様の食卓](https://western-restaurant-463.business.site/)  
-候補2: [ソリッゾ](https://www.instagram.com/ssoorriissoo/)  
- ([メニュー](https://menu-navi.jp/shop/taverna-sorriso/))
+候補2: [ソリッゾ](https://www.instagram.com/ssoorriissoo/) ([メニュー](https://menu-navi.jp/shop/taverna-sorriso/))
 
 
 20:00 出発  
