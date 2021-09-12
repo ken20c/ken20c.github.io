@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="chinko">私を押してね</button>
+
+    
+</body>
+
+<script>
+    const button = document.querySelector('.chinko');
+
+    button.onclick = function() {
+        let name = prompt('あなたの名前を教えてね');
+        if (name === 'かほ' || name === '華穂' || name === '山川'　|| name ==='山川華穂' || name === 'かっほ' || name ==='やまかわ' || name ==='やまかわかほ' || name ==='carro' || name === 'kaho' || name ==='くるま' || name === '車' || name === '🚗')
+            alert(name + '大好きだよ');
+        else if (name === 'そうた' || name === '颯汰')
+            alert(name + 'は大学の1番の友達');
+        else
+            alert('こんにちは' + name + 'さん，はじめまして');
+    }
+    let myName;
+    let myAge;
+</script>
+
+</html>
