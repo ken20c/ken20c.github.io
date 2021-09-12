@@ -23,7 +23,7 @@
     (8m)  
 15:30 終点(重複区間を除いて)  
     (17m)  
-15:50 [越前岬 展望台](https://www.town-echizen.jp/spot/spot01Detail.php?id=276) [画像](ken20c.github.io/img/echizen-misaki.jpg)  
+15:50 [越前岬 展望台](https://www.town-echizen.jp/spot/spot01Detail.php?id=276) [画像](../img/echizen-misaki.jpg)  
 
 【空き1〜2時間】  
 18:00 or 19:00　ディナー  
