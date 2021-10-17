@@ -14267,7 +14267,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14297,7 +14297,7 @@ x_seq:   最適化の過程を記録した変数xの点列</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14331,7 +14331,7 @@ x_seq:   最適化の過程を記録した変数xの点列</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -14352,7 +14352,7 @@ x_seq:   最適化の過程を記録した変数xの点列</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">df</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -14374,7 +14374,7 @@ x_seq:   最適化の過程を記録した変数xの点列</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">x_print</span><span class="p">(</span><span class="n">opt</span><span class="p">):</span>
@@ -14383,8 +14383,8 @@ x_seq:   最適化の過程を記録した変数xの点列</p>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;xの値:</span><span class="si">{</span><span class="n">opt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">,  関数の値:</span><span class="si">{</span><span class="n">f</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">continue</span>
         
-<span class="n">opt1</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt1</span><span class="p">)</span>
+<span class="n">opt11</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">x_print</span><span class="p">(</span><span class="n">opt11</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14459,11 +14459,11 @@ xの値:3.003,  関数の値:4.011
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt2</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt12</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">x_print</span><span class="p">(</span><span class="n">opt12</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14538,11 +14538,11 @@ xの値:1.035,  関数の値:0.001
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt3</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt13</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">x_print</span><span class="p">(</span><span class="n">opt13</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14617,11 +14617,11 @@ xの値:0.954,  関数の値:0.002
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt4</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt4</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt14</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">x_print</span><span class="p">(</span><span class="n">opt14</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14701,7 +14701,7 @@ xの値:1.000,  関数の値:0.000
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -14722,11 +14722,12 @@ xの値:1.000,  関数の値:0.000
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">df2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mf">2.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mf">2.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mf">2.5</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+    <span class="c1">#return ( (x-2)*(x+1)*x + (x-2.5)*(x+1)*(x) + (x-2.5)*(x-2)*(x) + (x-2.5)*(x-2)*(x+1) )</span>
+    <span class="k">return</span> <span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">10.5</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span>
 </pre></div>
 
      </div>
@@ -14744,11 +14745,17 @@ xの値:1.000,  関数の値:0.000
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt21</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt21</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">x2_print</span><span class="p">(</span><span class="n">opt</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">opt</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">opt</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;xの値:</span><span class="si">{</span><span class="n">opt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">,  関数の値:</span><span class="si">{</span><span class="n">f2</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+        
+<span class="n">opt21</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">x2_print</span><span class="p">(</span><span class="n">opt21</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14768,27 +14775,27 @@ xの値:1.000,  関数の値:0.000
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>xの値:3.000,  関数の値:4.000
-xの値:2.785,  関数の値:3.186
-xの値:2.658,  関数の値:2.747
-xの値:2.572,  関数の値:2.470
-xの値:2.510,  関数の値:2.280
-xの値:2.464,  関数の値:2.143
-xの値:2.428,  関数の値:2.040
-xの値:2.401,  関数の値:1.961
-xの値:2.378,  関数の値:1.900
-xの値:2.360,  関数の値:1.850
-xの値:2.346,  関数の値:1.811
-xの値:2.334,  関数の値:1.779
-xの値:2.324,  関数の値:1.753
-xの値:2.316,  関数の値:1.731
-xの値:2.309,  関数の値:1.713
-xの値:2.303,  関数の値:1.698
-xの値:2.298,  関数の値:1.686
-xの値:2.294,  関数の値:1.676
-xの値:2.291,  関数の値:1.667
-xの値:2.288,  関数の値:1.660
-xの値:2.286,  関数の値:1.654
+<pre>xの値:3.000,  関数の値:6.000
+xの値:2.785,  関数の値:2.358
+xの値:2.658,  関数の値:1.007
+xの値:2.572,  関数の値:0.377
+xの値:2.510,  関数の値:0.045
+xの値:2.464,  関数の値:-0.143
+xの値:2.428,  関数の値:-0.255
+xの値:2.401,  関数の値:-0.325
+xの値:2.378,  関数の値:-0.370
+xの値:2.360,  関数の値:-0.399
+xの値:2.346,  関数の値:-0.419
+xの値:2.334,  関数の値:-0.432
+xの値:2.324,  関数の値:-0.441
+xの値:2.316,  関数の値:-0.447
+xの値:2.309,  関数の値:-0.451
+xの値:2.303,  関数の値:-0.454
+xの値:2.298,  関数の値:-0.456
+xの値:2.294,  関数の値:-0.458
+xの値:2.291,  関数の値:-0.459
+xの値:2.288,  関数の値:-0.459
+xの値:2.286,  関数の値:-0.460
 </pre>
 </div>
 </div>
@@ -14823,11 +14830,11 @@ xの値:2.286,  関数の値:1.654
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt22</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt22</span><span class="p">)</span>
+<span class="n">x2_print</span><span class="p">(</span><span class="n">opt22</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14847,27 +14854,27 @@ xの値:2.286,  関数の値:1.654
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>xの値:1.000,  関数の値:0.000
-xの値:1.050,  関数の値:0.003
-xの値:1.140,  関数の値:0.019
-xの値:1.297,  関数の値:0.088
-xの値:1.561,  関数の値:0.315
-xの値:1.942,  関数の値:0.888
-xの値:2.278,  関数の値:1.634
-xの値:2.270,  関数の値:1.614
-xの値:2.275,  関数の値:1.624
-xの値:2.272,  関数の値:1.619
-xの値:2.273,  関数の値:1.622
-xの値:2.273,  関数の値:1.620
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
+<pre>xの値:1.000,  関数の値:3.000
+xの値:1.050,  関数の値:2.965
+xの値:1.140,  関数の値:2.854
+xの値:1.297,  関数の値:2.519
+xの値:1.561,  関数の値:1.647
+xの値:1.942,  関数の値:0.184
+xの値:2.278,  関数の値:-0.461
+xの値:2.270,  関数の値:-0.461
+xの値:2.275,  関数の値:-0.461
+xの値:2.272,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
 </pre>
 </div>
 </div>
@@ -14902,11 +14909,11 @@ xの値:2.273,  関数の値:1.621
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt23</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt23</span><span class="p">)</span>
+<span class="n">x2_print</span><span class="p">(</span><span class="n">opt23</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14926,27 +14933,27 @@ xの値:2.273,  関数の値:1.621
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>xの値:0.700,  関数の値:0.090
-xの値:0.507,  関数の値:0.243
-xの値:0.175,  関数の値:0.681
-xの値:-0.313,  関数の値:1.724
-xの値:-0.667,  関数の値:2.777
-xの値:-0.515,  関数の値:2.295
-xの値:-0.630,  関数の値:2.658
-xの値:-0.550,  関数の値:2.402
-xの値:-0.611,  関数の値:2.595
-xの値:-0.567,  関数の値:2.455
-xの値:-0.600,  関数の値:2.560
-xの値:-0.576,  関数の値:2.483
-xの値:-0.594,  関数の値:2.540
-xの値:-0.580,  関数の値:2.498
-xの値:-0.590,  関数の値:2.530
-xの値:-0.583,  関数の値:2.506
-xの値:-0.589,  関数の値:2.524
-xの値:-0.584,  関数の値:2.510
-xの値:-0.588,  関数の値:2.520
-xの値:-0.585,  関数の値:2.513
-xの値:-0.587,  関数の値:2.518
+<pre>xの値:0.700,  関数の値:2.785
+xの値:0.507,  関数の値:2.274
+xの値:0.175,  関数の値:0.870
+xの値:-0.313,  関数の値:-1.399
+xの値:-0.667,  関数の値:-1.877
+xの値:-0.515,  関数の値:-1.894
+xの値:-0.630,  関数の値:-1.919
+xの値:-0.550,  関数の値:-1.925
+xの値:-0.611,  関数の値:-1.931
+xの値:-0.567,  関数の値:-1.933
+xの値:-0.600,  関数の値:-1.934
+xの値:-0.576,  関数の値:-1.935
+xの値:-0.594,  関数の値:-1.936
+xの値:-0.580,  関数の値:-1.936
+xの値:-0.590,  関数の値:-1.936
+xの値:-0.583,  関数の値:-1.936
+xの値:-0.589,  関数の値:-1.936
+xの値:-0.584,  関数の値:-1.936
+xの値:-0.588,  関数の値:-1.936
+xの値:-0.585,  関数の値:-1.936
+xの値:-0.587,  関数の値:-1.936
 </pre>
 </div>
 </div>
@@ -14981,11 +14988,11 @@ xの値:-0.587,  関数の値:2.518
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">opt24</span> <span class="o">=</span> <span class="n">optimization</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.4</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">x_print</span><span class="p">(</span><span class="n">opt24</span><span class="p">)</span>
+<span class="n">x2_print</span><span class="p">(</span><span class="n">opt24</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15005,27 +15012,27 @@ xの値:-0.587,  関数の値:2.518
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>xの値:-1.400,  関数の値:5.760
-xの値:1.396,  関数の値:0.156
-xの値:1.714,  関数の値:0.510
-xの値:2.113,  関数の値:1.239
-xの値:2.316,  関数の値:1.732
-xの値:2.247,  関数の値:1.556
-xの値:2.286,  関数の値:1.653
-xの値:2.266,  関数の値:1.603
-xの値:2.277,  関数の値:1.630
-xの値:2.271,  関数の値:1.616
-xの値:2.274,  関数の値:1.623
-xの値:2.273,  関数の値:1.619
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.620
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
-xの値:2.273,  関数の値:1.621
+<pre>xの値:-1.400,  関数の値:7.426
+xの値:1.396,  関数の値:2.232
+xの値:1.714,  関数の値:1.046
+xの値:2.113,  関数の値:-0.288
+xの値:2.316,  関数の値:-0.446
+xの値:2.247,  関数の値:-0.456
+xの値:2.286,  関数の値:-0.460
+xの値:2.266,  関数の値:-0.461
+xの値:2.277,  関数の値:-0.461
+xの値:2.271,  関数の値:-0.461
+xの値:2.274,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
+xの値:2.273,  関数の値:-0.461
 </pre>
 </div>
 </div>
