@@ -1,6 +1,6 @@
 const a = 0
 
-function header(){
+function header(a){
     if(a++ < 1)
         {
         var html = "";
