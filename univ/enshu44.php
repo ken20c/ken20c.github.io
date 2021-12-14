@@ -20,6 +20,7 @@
                     }
                     echo "<td style='width: 20px; height: 20px; background-color: $cell_color;'>&nbsp;</td>\n";
                 }
+                echo "</tr>\n<tr>\n";
             }
             ?>
         </tr>
