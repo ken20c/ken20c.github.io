@@ -10,22 +10,22 @@
     <form>
         好きな色を選んでください。<br>
         色1:
-        <input type="radio" name="color" value="red">赤
-        <input type="radio" name="color" value="blue">青
-        <input type="radio" name="color" value="yellow">黄
-        <input type="radio" name="color" value="purple">紫
-        <input type="radio" name="color" value="orange">橙
-        <input type="radio" name="color" value="green" checked="checked">緑
-        <input type="radio" name="color" value="black">黒
+        <input type="radio" name="color" value="red"><span class="red">　</span>
+        <input type="radio" name="color" value="blue"><span class="blue">　</span>
+        <input type="radio" name="color" value="yellow"><span class="yellow">　</span>
+        <input type="radio" name="color" value="purple"><span class="purple">　</span>
+        <input type="radio" name="color" value="orange"><span class="orange">　</span>
+        <input type="radio" name="color" value="green" checked="checked"><span class="green">　</span>
+        <input type="radio" name="color" value="black"><span class="black">　</span>
         <br>
         色2:
-        <input type="radio" name="color2" value="red">赤
-        <input type="radio" name="color2" value="blue">青
-        <input type="radio" name="color2" value="yellow">黄
-        <input type="radio" name="color2" value="purple">紫
-        <input type="radio" name="color2" value="orange">橙
-        <input type="radio" name="color2" value="green">緑
-        <input type="radio" name="color2" value="black" checked="checked">黒
+        <input type="radio" name="color" value="red"><span class="red">　</span>
+        <input type="radio" name="color" value="blue"><span class="blue">　</span>
+        <input type="radio" name="color" value="yellow"><span class="yellow">　</span>
+        <input type="radio" name="color" value="purple"><span class="purple">　</span>
+        <input type="radio" name="color" value="orange"><span class="orange">　</span>
+        <input type="radio" name="color" value="green" checked="checked"><span class="green">　</span>
+        <input type="radio" name="color" value="black"><span class="black">　</span>
         <br>
         大きさ:
         <input type="number" name="size" value="20">
@@ -62,5 +62,34 @@
         </tr>
     </table>
 </body>
+
+<style>
+    span {
+        width:10px;
+        height: 10px;
+    }
+
+    .red {
+        background-color: red;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .purple {
+        background-color: purple;
+    }
+    .orange {
+        background-color: orange;
+    }
+    .green {
+        background-color: green;
+    }
+    .black {
+        background-color: black;
+    }
+</style>
 
 </html>
