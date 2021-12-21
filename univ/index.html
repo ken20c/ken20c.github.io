@@ -1,60 +1,73 @@
-<tr>
-    <td class="Sun"></td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td class="Sat">4</td>
-</tr>
-<tr>
-    <td class="Sun">5</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-    <td>10</td>
-    <td class="Sat">11</td>
-</tr>
-<tr>
-    <td class="Sun">12</td>
-    <td>13</td>
-    <td>14</td>
-    <td>15</td>
-    <td>16</td>
-    <td>17</td>
-    <td class="Sat">18</td>
-</tr>
-<tr>
-    <td class="Sun">19</td>
-    <td>20</td>
-    <td>21</td>
-    <td>22</td>
-    <td>23</td>
-    <td>24</td>
-    <td class="Sat">25</td>
-</tr>
-<tr>
-    <td class="Sun">26</td>
-    <td>27</td>
-    <td>28</td>
-    <td>29</td>
-    <td>30</td>
-    <td></td>
-    <td class="Sat"></td>
-</tr>
-
-<style>
-td {
-    width: 20px;
-    height: 20px;
-}
-.Sat {
-    color: blue;
-    background-color: #aaf;
-}
-.Sun {
-    color: red;
-    background-color: #faa;
-}
-</style>
+<div class="ind">
+    <p>2021年 12月のカレンダー</p>
+            <table style="border-collapse:collapse; border-spacing:0px; border:1px;">
+    <thead>
+    <tr>
+    <td class="head"><span class="sun">日</span></td>
+    <td class="head">月</td>
+    <td class="head">火</td>
+    <td class="head">水</td>
+    <td class="head">木</td>
+    <td class="head">金</td>
+    <td class="head"><span class="sat">土</span></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td class="content">1</td><td class="content">2</td><td class="content">3</td><td class="content"><span class="sat">4</span></td>
+    </tr>
+    <tr><td class="content"><span class="sun">5</span></td><td class="content">6</td><td class="content">7</td><td class="content">8</td><td class="content">9</td><td class="content">10</td><td class="content"><span class="sat">11</span></td>
+    </tr>
+    <tr><td class="content"><span class="sun">12</span></td><td class="content">13</td><td class="content">14</td><td class="content">15</td><td class="content">16</td><td class="content">17</td><td class="content"><span class="sat">18</span></td>
+    </tr>
+    <tr><td class="content"><span class="sun">19</span></td><td class="content">20</td><td class="content">21</td><td class="content">22</td><td class="content">23</td><td class="content">24</td><td class="content"><span class="sat">25</span></td>
+    </tr>
+    <tr><td class="content"><span class="sun">26</span></td><td class="content">27</td><td class="content">28</td><td class="content">29</td><td class="content">30</td><td class="content">31</td><td>&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    <form action="ex3.php" method="get">
+    <select name="year">
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021" selected="">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+    <option value="2030">2030</option>
+    </select>
+    年
+    <select name="month">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12" selected="">12</option>
+    </select>
+    月
+    <input type="submit" value="表示">
+    
+    </form>
+    </div>
