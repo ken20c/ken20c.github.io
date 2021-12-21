@@ -19,7 +19,11 @@ else {
  
 <form action="echo5.php" method="post">
 メッセージをどうぞ：
-<input type="text" name="message" value="" size="50">
+<input type="text" 
+    name="message" 
+    value="<?php echo $mesg?>"
+    size="50">
+
 <input type="submit" value="送信">
 </form>
  
@@ -34,4 +38,5 @@ if ($mesg != "") {
 }
 ?>
 </body>
-</html> +
+</html>
+13:49
