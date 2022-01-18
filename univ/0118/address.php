@@ -10,8 +10,8 @@ if (isset($_POST['searchString'])) {
     $dbh = new PDO($dsn);          // データベースに接続する
 
     // 問合せのための SQL 文
-    $sql = "SELECT zipcode,addr1||addr2||addr3 as addr FROM ken_all 
-            WHERE addr1 LIKE ? ORDER BY zipcode DESC";
+    $sql = "SELECT zipcode,addr1||addr2||addr3 as addr, COUNT(*) FROM ken_all 
+            WHERE addr LIKE ? ORDER BY zipcode DESC";
     // 問合せの準備
     $stmt = $dbh->prepare($sql);
     
@@ -47,6 +47,7 @@ if (isset($_POST['searchString'])) {
         echo "<table border='1'>\n";
         echo "<tr><th>郵便番号</th><th>住所</th></tr>\n";
 
+        
         // 結果を1行ずつ取り出して表示する
         while ($row = $stmt->fetch()) {
             echo "<tr>\n";
@@ -59,6 +60,10 @@ if (isset($_POST['searchString'])) {
         // データベースとの接続を解除する
         $pdo = null;
     }
+    if ($row[2] == 0){
+        echo("該当する住所がありません");
+    }
+    
     ?>
 
 </body>
