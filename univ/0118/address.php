@@ -40,29 +40,33 @@ if (isset($_POST['searchString'])) {
 
     <?php
     if ($searchString != "") {
-        if ($row[2] == 0) {
-            echo ("該当する住所がありません");
-        } else {
-            // 問合せの結果の表示
+
+        if ($row = $stmt->fetch()) {
             echo "<hr>\n";
             echo "<p>検索結果</p>\n";
 
             echo "<table border='1'>\n";
             echo "<tr><th>郵便番号</th><th>住所</th></tr>\n";
 
-
-            // 結果を1行ずつ取り出して表示する
-            while ($row = $stmt->fetch()) {
-                echo "<tr>\n";
-                echo "<td>" . $row[0] . "</td>\n";
-                echo "<td>" . $row[1] . "</td>\n";
-                echo "</tr>\n";
-            }
-            echo "</table>\n";
-
-            // データベースとの接続を解除する
-            $pdo = null;
+            echo "<tr>\n";
+            echo "<td>" . $row[0] . "</td>\n";
+            echo "<td>" . $row[1] . "</td>\n";
+            echo "</tr>\n";
+        } else {
+            echo "該当の住所がありません。";
         }
+
+        // 結果を1行ずつ取り出して表示する
+        while ($row = $stmt->fetch()) {
+            echo "<tr>\n";
+            echo "<td>" . $row[0] . "</td>\n";
+            echo "<td>" . $row[1] . "</td>\n";
+            echo "</tr>\n";
+        }
+        echo "</table>\n";
+
+        // データベースとの接続を解除する
+        $pdo = null;
     }
 
     ?>
