@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -9,6 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カレンダー</title>
 </head>
 
 <body>
@@ -19,3 +23,160 @@
             氏　　名：藤井　絢斗<br>学籍番号：1193033130
         </p>
     </div>
+    <div class="container">
+        <?php
+        // 指定された年月日の曜日を数値で返す関数
+        function getDayOfWeek($year, $month, $day)
+        {
+            // 引数で指定された日のUnixタイムスタンプを取得する
+            $timestamp = mktime(0, 0, 0, $month, $day, $year);
+            // 関数getdateはタイムスタンプで指定された時刻の年，月，日，曜日などの要素を
+            // 連想配列として返す
+            $date = getdate($timestamp);
+            // 曜日（日=0, 月=1, 火=2,..., 土=6）を取り出して返す
+            return $date['wday'];
+        }
+        ?>
+
+        <?php
+        // 指定した年月の末日を返す関数
+        function getLastDay($year, $month)
+        {
+            // $year 年 ($month+1)月 0 日のUnixタイムスタンプを取得する
+            $timestamp = mktime(0, 0, 0, $month + 1, 0, $year);
+            // 関数getdateはタイムスタンプで指定された時刻の年，月，日，曜日などの要素を
+            // 連想配列として返す
+            $date = getdate($timestamp);
+            // 日を取り出して返す
+            return $date['mday'];
+        }
+        ?>
+
+
+        <?php
+        $year = $_GET['year'];
+        $month = $_GET['month'];
+
+        $dayweek = getDayOfWeek($year, $month, 1);
+        $lastday = getLastDay($year, $month);
+        // 1日目まで空白を入れる &nbsp;
+        // 最終日まで，iが6で割り切れたら</td><td>
+        ?>
+        <div class="ind">
+            <p><?php echo $year . "年" . $month . "月" ?>のカレンダー</p>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <td class="head"><span class="sun">日</span></td>
+                        <td class="head">月</td>
+                        <td class="head">火</td>
+                        <td class="head">水</td>
+                        <td class="head">木</td>
+                        <td class="head">金</td>
+                        <td class="head"><span class="sat">土</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <?php
+                        for ($i = 0; $i < $dayweek; $i++) {
+                            echo "<td>&nbsp;</td>";
+                        }
+
+                        for ($i = 1; $i <= $lastday; ++$i) {
+                            if (($i + $dayweek) % 7 == 1) {
+                                echo "<td class=\"sun\">" . $i . "</td>";
+                            } else if (($i + $dayweek) % 7 == 0) {
+                                echo "<td class=\"sat\">" . $i . "</td>";
+                            } else {
+                                echo "<td style=\"text-align: right;\">" . $i . "</td>";
+                            }
+
+                            if (($i + $dayweek) % 7 == 0) {
+                                echo "</tr><tr>";
+                            }
+                        }
+
+                        for ($i = 1; ($dayweek + $lastday + $i - 1) % 7 != 0; $i++) {
+                            echo "<td class=\"next\">" . $i . "</td>";
+                        }
+                        ?>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <form action="calendar.php" method="get">
+                <select name="year">
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+                年
+                <select name="month">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                月
+                <input type="submit" value="表示">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    .sun {
+        text-align: right;
+        color: red;
+    }
+
+    .sat {
+        text-align: right;
+        color: blue;
+    }
+
+    .calendar {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        border: 1px;
+        border-color: black;
+    }
+
+    .next {
+        text-align: right;
+        color: gray;
+    }
+img {
+    max-width: 25%;
+}
+</style>
+
+</html>
