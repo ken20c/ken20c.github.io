@@ -7,3 +7,6 @@
 - mac製品(macbook, iPad air, iPhone SE)
 - ワイヤレスイヤホン
 - 27モニタtype-c接続
+
+- Anker Soundcore P3(ネイビー)
+- ホイールマウス(logicool)
